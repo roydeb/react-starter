@@ -1,4 +1,4 @@
-var path = require('path);
+var path = require('path');
 
 var config = {
 	context: path.join(__dirname, 'src'),
@@ -11,9 +11,11 @@ var config = {
 	},
 	module: {
 	  loaders: [
+	   {
 	    test: /\.js$/,
 	    exclude: /node_modules/,
 	    loaders: ['babel'],
+	   },
 	  ],
 	},
 	resolveLoader: {
